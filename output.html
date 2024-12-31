@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detection Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #00f260, #0575e6);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: #ffffff;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            max-width: 600px;
+            width: 90%;
+        }
+
+        h1 {
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+            color: #333;
+        }
+
+        .media {
+            margin-top: 1rem;
+        }
+
+        video, img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 1rem;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.7rem 1.5rem;
+            background-color: #0575e6;
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        a:hover {
+            background-color: #0464d4;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Detection Result</h1>
+        <div class="media">
+            {% if filename.endswith('.mp4') %}
+                <video controls>
+                    <source src="{{ url_for('output_file', filename=filename) }}" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            {% else %}
+                <img src="{{ url_for('output_file', filename=filename) }}" alt="Detection Result">
+            {% endif %}
+        </div>
+        <a href="/">Back to Upload</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pothole Detection</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #4facfe, #00f2fe);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: #ffffff;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            max-width: 400px;
+            width: 90%;
+        }
+
+        h1 {
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+            color: #333;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+            color: #555;
+        }
+
+        input[type="file"] {
+            display: block;
+            margin: 1rem auto;
+            padding: 0.5rem;
+            font-size: 1rem;
+        }
+
+        button {
+            background-color: #4facfe;
+            border: none;
+            color: white;
+            padding: 0.7rem 1.5rem;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #3b8bdb;
+        }
+
+        footer {
+            margin-top: 1.5rem;
+            font-size: 0.9rem;
+            color: #777;
+        }
+
+        footer a {
+            color: #4facfe;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Pothole Detection</h1>
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            <label for="file">Upload a video or image:</label>
+            <input type="file" id="file" name="file" accept="video/*,image/*" required>
+            <button type="submit">Upload and Process</button>
+        </form>
+        <footer>
+            Built with ❤️ for road safety. 
+        </footer>
+    </div>
+</body>
+</html>
