@@ -34,3 +34,6 @@ This project implements a machine learning solution for pothole detection using 
 - Road safety assessment
 - Automated road condition monitoring
 - Smart city infrastructure
+
+  ![output-2](https://github.com/user-attachments/assets/986c1f54-3802-47c3-b558-df328d1ca6cd)
+
