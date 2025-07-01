@@ -43,3 +43,11 @@ This project implements a machine learning solution for pothole detection using 
 
   ![output-2](https://github.com/user-attachments/assets/986c1f54-3802-47c3-b558-df328d1ca6cd)
 
+### System Overview Posters:
+### Poster 1:
+![Pothole Detection Using YOLO 8](https://github.com/user-attachments/assets/f5e4806e-1b2b-4a84-914a-ca669649fc6b)
+
+### Poster 2:
+![This project focuses on creating an automated pothole detection system using YOLO V8 technology to help reduce road accidents and vehicle damage  By spotting potholes early, it helps make roads sa](https://github.com/user-attachments/assets/7222bc5e-01a4-400e-8057-6c00d8f81184)
+
+
